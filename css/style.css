@@ -1,0 +1,149 @@
+body {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  border-radius: 10px;
+  display: flex;
+  max-width: 700px;
+  background-color: white;
+  margin: 0 1rem;
+}
+
+.product-img-1 {
+  width: 50%;
+}
+
+.product-img-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.product-img-2 {
+  display: none;
+}
+
+.product-details {
+  width: 50%;
+  padding: 2rem;
+}
+
+.product-details .title {
+  color: hsl(212, 21%, 14%);
+  padding-right: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.product-details .description {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  line-height: 22px;
+  margin-bottom: 1.75rem;
+}
+
+.product {
+  font-family: "Montserrat";
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 1.75rem;
+}
+
+.pricing {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.pricing .new-price {
+  color: hsl(158, 36%, 37%);
+}
+
+.pricing .old-price {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.product-details .btn {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Montserrat";
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.product-details .btn:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+@media only screen and (max-width: 628px) {
+  .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .product-img-1 {
+    display: none;
+  }
+
+  .product-img-2 {
+    display: block;
+  }
+
+  .product-img-2 img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 20px 50px;
+  }
+
+  .product-details {
+    width: 100%;
+  }
+
+  .product-details .title {
+    margin: 0;
+    padding: 0 0 10px 0;
+  }
+
+  .product-details .product {
+    margin: 0;
+    padding: 0 0 10px 0;
+  }
+
+  .product-details .title {
+    padding-right: 0;
+  }
+}
