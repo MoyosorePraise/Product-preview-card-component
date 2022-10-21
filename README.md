@@ -17,8 +17,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Overview
 ### Screenshot
-![](design/desktop-preview.png)
-![](design/mobile-preview.png)
+![](design/desktop-design.png)
+![](design/mobile-design.png)
 
 ### Links
 - Solution URL: [https://github.com/MoyosorePraise/Product-preview-card-component]
