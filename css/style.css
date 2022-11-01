@@ -23,20 +23,16 @@ body {
   margin: 0 1rem;
 }
 
-.product-img-1 {
+.product-img {
   width: 50%;
 }
 
-.product-img-1 img {
+.product-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-
-.product-img-2 {
-  display: none;
 }
 
 .product-details {
@@ -75,6 +71,7 @@ body {
 
 .pricing .new-price {
   color: hsl(158, 36%, 37%);
+  font-size: 2.5rem;
 }
 
 .pricing .old-price {
@@ -101,7 +98,7 @@ body {
 }
 
 .product-details .btn:hover {
-  background-color: hsl(212, 21%, 14%);
+  background-color: #1f4235;
 }
 
 @media only screen and (max-width: 628px) {
@@ -110,15 +107,7 @@ body {
     margin-bottom: 1rem;
   }
 
-  .product-img-1 {
-    display: none;
-  }
-
-  .product-img-2 {
-    display: block;
-  }
-
-  .product-img-2 img {
+  .product-img img {
     width: 100%;
     object-fit: cover;
     border-radius: 5px 5px 0 0;
